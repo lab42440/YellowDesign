@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Design | Ultra-Affordable Graphic Design for Startups</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hero Wrapper implementing mockup layout split */
+        .yellow-design-hero {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            min-height: 550px;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Left Split Column: Identity & Secondary Info */
+        .hero-left-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 6% 40px 8%;
+            z-index: 2;
+        }
+
+        /* Yellow Circle Brand Accent */
+        .brand-logo-container {
+            margin-bottom: 35px;
+        }
+
+        .brand-circle-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85px;
+            height: 85px;
+            background-color: #f7ff00; /* Vibrant Canva Yellow Match */
+            border-radius: 50%;
+            font-size: 46px;
+            font-weight: 800;
+            color: #000000;
+        }
+
+        /* Content Text Formatting Blocks */
+        .hero-text-block {
+            color: #000000;
+        }
+
+        .hero-text-block p {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+            color: #000000;
+        }
+
+        .hero-contact {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 30px !important;
+        }
+
+        .contact-link {
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* WhatsApp Call to Action Styling */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #25d366; /* Official WhatsApp Palette */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.2px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            align-self: flex-start;
+            border: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            background: #1ebd58;
+        }
+
+        /* Right Split Column: Diagonal Point & Title Block */
+        .hero-right-banner {
+            flex: 1.2;
+            background-color: #f7ff00; /* Matches canvas visual design */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 80px 40px 40px 12%;
+            /* Emulates clean linear inward intersection point */
+            clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .hero-title-container {
+            max-width: 520px;
+        }
+
+        /* Clean Sans Serif Mockup Title */
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.2rem);
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #111827;
+            margin: 0;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        /* Fluid Layout Adjustment for Small Screens / Mobile Viewports */
+        @media (max-width: 900px) {
+            .yellow-design-hero {
+                flex-direction: column-reverse;
+                min-height: auto;
+            }
+            
+            .hero-right-banner {
+                clip-path: none;
+                padding: 60px 30px;
+                flex: none;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .hero-left-content {
+                padding: 40px 30px;
+                flex: none;
+            }
+
+            .brand-circle-logo {
+                width: 70px;
+                height: 70px;
+                font-size: 38px;
+            }
+
+            .whatsapp-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="yellow-design-hero">
+        <!-- Brand Profile & Dynamic Action Section -->
+        <section class="hero-left-content">
+            <div class="brand-logo-container">
+                <div class="brand-circle-logo">Y</div>
+            </div>
+            
+            <div class="hero-text-block">
+                <p class="hero-tagline">
+                    We make affordable<br>
+                    posters menus ect...<br>
+                    for businesses
+                </p>
+                
+                <p class="hero-contact">
+                    Contact us at<br>
+                    <a href="tel:+27829743626" class="contact-link">+27829743626</a>
+                </p>
+                
+                <a href="https://wa.me" target="_blank" class="whatsapp-btn">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Structural Diagonal Core Brand Block -->
+        <section class="hero-right-banner">
+            <div class="hero-title-container">
+                <h1 class="hero-title">Yellow design</h1>
+                <p class="hero-subtitle">
+                    Launch your business with premium, eye-catching visual assets without the high agency price tag. 
+                    We specialize in delivering highly affordable, custom design frameworks tailored perfectly for growing brands.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
